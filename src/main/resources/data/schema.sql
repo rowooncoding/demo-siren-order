@@ -7,7 +7,7 @@ CREATE TABLE products
     description VARCHAR(200) NULL,
     price DECIMAL(10, 2) NOT NULL,
     PRIMARY KEY (productId)
-)
+);
 
 DROP TABLE IF EXISTS orders;
 
