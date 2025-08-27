@@ -1,7 +1,7 @@
 package com.example.demosirenorder.controller;
 
 import com.example.demosirenorder.domain.CreateCustomer;
-import com.example.demosirenorder.domain.Customer;
+import com.example.demosirenorder.domain.CustomerDto;
 import com.example.demosirenorder.service.CustomerService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,7 +17,7 @@ public class CustomerController {
     }
 
     @PostMapping("/api/v1/customers")
-    public Customer createNewCustomer(
+    public CustomerDto createNewCustomer(
             @RequestParam String name,
             @RequestParam String address,
             @RequestParam String phoneNumber
